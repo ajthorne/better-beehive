@@ -11,11 +11,12 @@ const Sting = React.createClass({
         <form onSubmit={this.submitHandler} className="sting-form">
           <input type="email" placeholder="Email"/>
           <input type="text" placeholder="Relationship to Individual with Special Needs"/>
-          <select>
-           <option value="medical">Medical</option>
-           <option value="social">Social</option>
-           <option value="school">School</option>
-          </select>
+          <input type='text' list='business-type'/>
+          <datalist id='business-type'>
+            <option label='medical' value='Medical'/>
+            <option label='social' value='Social'/>
+            <option label='school' value='School'/>
+          </datalist>
           <label htmlFor="sting-why">Why Stingworthy?</label>
           <textarea id="sting-why"></textarea>
           <label htmlFor="sting-aei">Please choose at least one Stingworthy deficit</label>

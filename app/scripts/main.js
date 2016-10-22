@@ -5,6 +5,7 @@ import App from './components/App';
 import Landing from './components/Landing';
 import Buzz from './components/Buzz';
 import Sting from './components/Sting';
+import Search from './components/Search';
 
 
 const router = (
@@ -13,6 +14,7 @@ const router = (
       <IndexRoute component={Landing}/>
     <Route path="/buzz" component={Buzz}/>
     <Route path="/sting" component={Sting}/>
+    <Route path="/search" component={Search}/>
     </Route>
   </Router>
 );

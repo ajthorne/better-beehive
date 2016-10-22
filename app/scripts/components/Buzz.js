@@ -13,11 +13,12 @@ const Buzz = React.createClass({
           <input type="text" placeholder="Relationship to Individual with Special Needs"/>
           <input type="text" placeholder="Name of Business"/>
           <input type="text" placeholder="Zip code of Business"/>
-          <select>
-           <option value="medical">Medical</option>
-           <option value="social">Social</option>
-           <option value="school">School</option>
-          </select>
+          <input type='text' list='business-type'/>
+          <datalist id='business-type'>
+            <option label='medical' value='Medical'/>
+            <option label='social' value='Social'/>
+            <option label='school' value='School'/>
+          </datalist>
           <label htmlFor="buzz-why">Why Buzzworthy?</label>
           <textarea id="buzz-why"></textarea>
           <label htmlFor="buzz-aei">Please choose at least one Buzzworthy value</label>
