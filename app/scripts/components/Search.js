@@ -23,7 +23,7 @@ const Search = React.createClass({
     // store.reviews.off('update change', this.updateState)
     // store.businesses.off('update change', this.updateState)
 
-  }
+  },
 
   render: function () {
     return (

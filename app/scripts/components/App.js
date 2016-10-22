@@ -1,7 +1,6 @@
 import React from 'react';
-import Nav from './Nav';
-import Landing from './Landing';
-import Footer from './Footer';
+import Nav from './components/Nav';
+import Footer from './components/Footer';
 
 const App = React.createClass({
   render: function () {
@@ -16,6 +15,3 @@ const App = React.createClass({
 });
 
 export default App;
-
-
-//Add Footer

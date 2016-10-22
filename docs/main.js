@@ -1,1 +1,1 @@
-console.error("SyntaxError: /Users/amandathorne/coding/better-beehive/app/scripts/components/Search.js: Unexpected token, expected , (28:2) while parsing file: /Users/amandathorne/coding/better-beehive/app/scripts/components/Search.js");
+console.error("Error: Cannot find module './components/Nav' from '/Users/amandathorne/coding/better-beehive/app/scripts/components'");

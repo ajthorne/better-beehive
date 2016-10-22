@@ -9,7 +9,7 @@ const Landing = React.createClass({
   },
   render: function () {
     return (
-      <section className="Landing">
+      <section className="Hero">
         <h1>Better Beehive Project</h1>
         <h3>Creating A Buzz Around Our Needs</h3>
         <div><a href="/buzz">Image for Buzz</a></div>
@@ -23,7 +23,6 @@ const Landing = React.createClass({
           </datalist>
           <input type="submit" value="submit"/>
         </form>
-        <h4><span>"</span>Revolutionary space to have our voices heard. We recognize entities in our community that value accessibility, empowerment and inclusion (AEI) for all. The possibilities are endless.<span>"</span>"</h4>
       </section>
     )
   }

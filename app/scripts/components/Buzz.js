@@ -30,7 +30,7 @@ const Buzz = React.createClass({
       </section>
     )
   }
-})
+});
 
 export default Buzz;
 
