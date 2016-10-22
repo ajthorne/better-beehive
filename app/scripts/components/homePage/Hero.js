@@ -1,26 +1,22 @@
 import React from 'react';
 import {browserHistory} from 'react-router';
 
-const Landing = React.createClass({
+const Hero = React.createClass({
   searchHandler: function (e) {
     e.preventDefault();
-    console.log('hi');
-    browserHistory.push('/search');
+    let businessType = document.querySelector('.search-field:checked').value;
+    browserHistory.push(`/search/type=${businessType}`);
   },
   render: function () {
     return (
       <section className="Hero">
         <h1>Better Beehive Project</h1>
-        <h3>Creating A Buzz Around Our Needs</h3>
         <div><a href="/buzz">Image for Buzz</a></div>
         <div><a href="/sting">Image for Sting</a></div>
         <form onSubmit={this.searchHandler} className="search-field">
-          <input type='text' list='business-type'/>
-          <datalist id='business-type'>
-            <option label='medical' value='Medical'/>
-            <option label='social' value='Social'/>
-            <option label='school' value='School'/>
-          </datalist>
+          <input className="search-field" type="checkbox" id="medical" value="medical"/><label>Medical</label>
+          <input className="search-field" type="checkbox" id="social" value="social"/><label>Social</label>
+          <input className="search-field" type="checkbox" id="school" value="school"/><label>School</label>
           <input type="submit" value="submit"/>
         </form>
       </section>
@@ -28,4 +24,11 @@ const Landing = React.createClass({
   }
 });
 
-export default Landing;
+export default Hero;
+
+// <input type='text' list='business-type'/>
+// <datalist id='business-type' ref='type'>
+//   <option label='medical' ref="0" id="0" value='Medical'/>
+//   <option label='social' ref="1" id="1" value='Social'/>
+//   <option label='school' ref="2" id="2" value='School'/>
+// </datalist>

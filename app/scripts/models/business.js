@@ -1,7 +1,7 @@
 import Backbone from 'backbone';
 
 const Business = Backbone.Model.extend({
-  urlRoot: ``,
+  urlRoot: `https://serene-river-21105.herokuapp.com/businesses/`,
   defaults: {
     businessId: '',
     name: '',

@@ -1,6 +1,6 @@
 import Business from './models/business';
 import Businesses from './collections/businesses';
-import Review from '.models/review';
+import Review from './models/review';
 import Reviews from './collections/reviews';
 
 let store = {

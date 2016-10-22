@@ -14,7 +14,7 @@ const router = (
       <IndexRoute component={Features}/>
     <Route path="/buzz" component={Buzz}/>
     <Route path="/sting" component={Sting}/>
-    <Route path="/search" component={Search}/>
+    <Route path="/search/:type" component={Search}/>
     </Route>
   </Router>
 );
