@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import App from './components/App';
 import Landing from './components/Landing';
 import Buzz from './components/Buzz';
+import Sting from './components/Sting';
 
 
 const router = (
@@ -11,6 +12,7 @@ const router = (
     <Route path="/" component={App}>
       <IndexRoute component={Landing}/>
     <Route path="/buzz" component={Buzz}/>
+    <Route path="/sting" component={Sting}/>
     </Route>
   </Router>
 );
