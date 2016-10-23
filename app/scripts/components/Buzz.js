@@ -52,7 +52,7 @@ const Buzz = React.createClass({
             <label htmlFor="buzz-why">Why Buzzworthy?</label>
             <textarea id="buzz-why"></textarea>
           </div>
-          <div className="form-section">
+          <div className="form-checkbox">
             <label htmlFor="buzz-aei">Please choose at least one Buzzworthy value</label>
             <label><input type="checkbox" id="accessibility"/>Accessibility</label>
             <label><input type="checkbox" id="empowerment"/>Empowerment</label>
