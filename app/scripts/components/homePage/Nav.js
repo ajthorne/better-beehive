@@ -7,7 +7,7 @@ const Nav = React.createClass({
       <nav>
         <li><Link to="/">Home</Link></li>
         <li><Link to="#">About</Link></li>
-        <li><Link to="#">BuzzPoints</Link></li>
+        <li><a href="https://medium.com/@BetterBeehive/">Buzz Blog</a></li>
         <li><Link to="#">Contact</Link></li>
       </nav>
     )

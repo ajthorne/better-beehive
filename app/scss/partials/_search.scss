@@ -1,3 +1,30 @@
 .search-list {
-  
+  ul {
+
+    li {
+      list-style-type: none;
+      display: inline-flex;
+
+    }
+
+    .buzzImg {
+      width: 15%;
+    }
+
+    .rating {
+      flex-basis: 50%;
+
+      p {
+        display: inline-block;
+        font-family: $header-font;
+        font-size: 3rem;
+        color: RGBA(0, 123, 0, 1.00);
+      }
+    }
+
+    .contact {
+      flex-basis: 50%;
+      font-size: 3rem;
+    }
+  }
 }
