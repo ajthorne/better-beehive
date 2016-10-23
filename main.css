@@ -1,3 +1,42 @@
+nav {
+  list-style-type: none;
+  text-align: right;
+  padding: 1rem; }
+  nav li {
+    display: inline-block;
+    margin-right: 0.5rem;
+    font-size: 1.3rem; }
+  nav a {
+    text-decoration: none;
+    color: #007B00; }
 
+.hero {
+  text-align: center; }
+  .hero h1 {
+    font-size: 3rem; }
+  .hero .buzz-or-sting figure {
+    display: inline-block; }
+  .hero .search-field label {
+    color: #007B00;
+    margin-right: 0.5rem; }
+  .hero .search-field input[type="checkbox"] {
+    transform: scale(1.5); }
+  .hero .search-field button {
+    font-size: 1.2rem;
+    padding: 1%; }
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: helvetica;
+  background: #ADCE33; }
+  body .container {
+    min-height: 100%;
+    position: relative; }
 
 /*# sourceMappingURL=main.css.map */
