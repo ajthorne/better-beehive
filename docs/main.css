@@ -1,7 +1,8 @@
 nav {
   list-style-type: none;
   text-align: right;
-  padding: 1rem; }
+  padding: 1rem;
+  font-family: "Lobster", cursive; }
   nav li {
     display: inline-block;
     margin-right: 0.5rem;
@@ -11,19 +12,58 @@ nav {
     color: #007B00; }
 
 .hero {
-  text-align: center; }
+  text-align: center;
+  font-family: "Lobster", cursive;
+  color: #007B00; }
   .hero h1 {
-    font-size: 3rem; }
+    font-size: 3rem;
+    margin: 0.5rem;
+    color: black;
+    font-weight: normal; }
+    .hero h1 span {
+      color: #FFB100; }
   .hero .buzz-or-sting figure {
     display: inline-block; }
   .hero .search-field label {
-    color: #007B00;
+    font-size: 1.2rem;
     margin-right: 0.5rem; }
-  .hero .search-field input[type="checkbox"] {
-    transform: scale(1.5); }
+  .hero .search-field select {
+    font-family: "Lobster", cursive;
+    font-size: 1.2rem;
+    padding: 2%;
+    color: #007B00;
+    width: 30%;
+    border: 0; }
   .hero .search-field button {
     font-size: 1.2rem;
-    padding: 1%; }
+    background: white;
+    border: 0;
+    border-radius: 5px;
+    color: #007B00;
+    font-family: 'Lobster', cursive;
+    font-size: 1.2rem; }
+
+.infographic-section {
+  display: flex;
+  box-sizing: border-box;
+  position: relative; }
+  .infographic-section figure {
+    flex-basis: 50%;
+    margin-right: 0;
+    text-align: center; }
+  .infographic-section #info-arrow {
+    position: absolute;
+    bottom: 0;
+    left: 265px; }
+  .infographic-section .infographic-why {
+    flex-basis: 50%;
+    margin-right: 2rem;
+    margin-top: 5rem;
+    text-align: center; }
+    .infographic-section .infographic-why h2 {
+      width: 80%; }
+    .infographic-section .infographic-why p {
+      width: 80%; }
 
 html {
   height: 100%;

@@ -1,0 +1,35 @@
+.infographic-section {
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+
+  figure {
+    flex-basis: 50%;
+    margin-right: 0;
+    text-align: center;
+  }
+    #info-img {
+
+    }
+
+    #info-arrow {
+      position: absolute;
+      bottom: 0;
+      left: 265px;
+    }
+
+  .infographic-why {
+    flex-basis: 50%;
+    margin-right: 2rem;
+    margin-top: 5rem;
+    text-align: center;
+
+    h2 {
+      width: 80%;
+    }
+
+    p {
+      width: 80%;
+    }
+  }
+  }

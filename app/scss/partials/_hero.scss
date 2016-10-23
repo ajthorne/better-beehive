@@ -1,8 +1,17 @@
 .hero {
   text-align: center;
+  font-family: $header-font;
+  color: #007B00;
 
   h1 {
     font-size: 3rem;
+    margin: 0.5rem;
+    color: black;
+    font-weight: normal;
+
+    span {
+      color: #FFB100;
+    }
   }
 
   .buzz-or-sting {
@@ -14,18 +23,28 @@
   .search-field {
     // width: 50%;
     label {
-      color: #007B00;
+      font-size: 1.2rem;
       margin-right: 0.5rem;
     }
 
-    input[type="checkbox"] {
-      transform: scale(1.5);
+    select {
+      font-family: $header-font;
+      font-size: 1.2rem;
+      padding: 2%;
+      color: #007B00;
+      width: 30%;
+      border: 0;
     }
 
     button {
-      // width: 50%;
       font-size: 1.2rem;
-      padding: 1%;
+      background: white;
+      border: 0;
+      border-radius: 5px;
+      color: #007B00;
+      font-family: 'Lobster', cursive;
+      font-size: 1.2rem;
+      // padding: 0.5rem;
       // display: block;
     }
   }
