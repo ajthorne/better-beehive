@@ -20,7 +20,7 @@ const Buzz = React.createClass({
           <h4>Better Beehive Project</h4>
         </div>
         <div className="buzz-form">
-          <h1>Leave A Buzz</h1>
+          <h1 id="buzz-header">Leave A Buzz</h1>
           <img src="../../../assets/images/Buzz.png"/>
         <form onSubmit={this.submitHandler}>
           <div className="form-section">

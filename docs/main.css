@@ -175,6 +175,10 @@ footer {
   .buzz-section .buzz-form {
     width: 50%;
     margin: 0 auto; }
+    .buzz-section .buzz-form #sting-header {
+      color: #884D00; }
+    .buzz-section .buzz-form #buzz-header {
+      color: #007B00; }
     .buzz-section .buzz-form h1 {
       display: inline-block;
       vertical-align: top;
