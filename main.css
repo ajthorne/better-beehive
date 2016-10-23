@@ -106,13 +106,17 @@ nav {
   text-align: center;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  min-height: 500px; }
+  min-height: 500px;
+  color: white; }
   .about-section .about-copy {
     flex-basis: 50%; }
     .about-section .about-copy h1 {
       font-size: 3.5rem;
       font-family: "Lobster", cursive;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      font-weight: normal;
+      margin-left: 2rem;
+      text-align: left; }
     .about-section .about-copy p {
       font-size: 1.5rem;
       line-height: 26px;
@@ -123,6 +127,39 @@ nav {
     .about-section .about-pic img {
       width: 70%;
       border-radius: 50%; }
+    .about-section .about-pic figcaption {
+      font-family: "Lobster", cursive;
+      font-size: 2.3rem;
+      color: white; }
+
+footer {
+  background: #69B500;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  color: white; }
+  footer h1 {
+    font-family: "Lobster", cursive;
+    font-size: 3rem;
+    margin-bottom: 0.5rem; }
+  footer form {
+    display: inline-block;
+    width: 50%; }
+  footer .contact-holder {
+    display: inline-block;
+    width: 50%; }
+    footer .contact-holder p {
+      font-size: 1.3rem;
+      margin-top: 0; }
+  footer .social-media-holder {
+    margin-top: 2rem;
+    margin-bottom: 1rem; }
+    footer .social-media-holder i {
+      margin-right: 0.8rem;
+      font-size: 3rem; }
+  footer .copyright {
+    font-family: "Lobster", cursive;
+    font-size: 1.3rem; }
 
 html {
   height: 100%;
