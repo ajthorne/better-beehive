@@ -3,7 +3,15 @@ import React from 'react';
 const Buzz = React.createClass({
   submitHandler: function () {
     console.log('sending to server...');
-  },
+    // $.ajax({
+    //     type: 'POST',
+    //     url: `https://serene-river-21105.herokuapp.com/businesses`,
+    //     data: json.stringify()
+    //     success: function (response) {
+    //       console.log(response);
+    //     }
+    //   });
+    },
   render: function () {
     return (
       <section className="buzz-section">

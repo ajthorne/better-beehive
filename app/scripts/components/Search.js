@@ -18,17 +18,14 @@ const Search = React.createClass({
   })
   },
   componentWillMount: function () {
-    //fetch/ajax request here
-    // store.reviews.fetch();
     let businessType = this.props.params.type.substring(5);
-    $.ajax({
-        type: 'GET',
-        url: `https://serene-river-21105.herokuapp.com/reviews/search?type=${businessType}`,
-        success: function (response) {
-          console.log(response);
-        }
-      });
-
+    store.reviews.on('update', this.updateState);
+    store.reviews.fetch({
+      url: `https://serene-river-21105.herokuapp.com/reviews/search?type=${businessType}`,
+      success: function (response) {
+        console.log(response);
+      }
+    });
   },
   componentWillUnmount: function () {
     store.reviews.off('update change', this.updateState);
@@ -36,6 +33,15 @@ const Search = React.createClass({
   },
 
   render: function () {
+    console.log(store.reviews);
+    let reviews = store.reviews.map((review, i, arr) => {
+      console.log('review:', review.attributes);
+      console.log('address:', review.attributes.address);
+      console.log('buzzes:', review.attributes.buzzes);
+      console.log('name:', review.attributes.name);
+      console.log('stings:', review.attributes.stings);
+      console.log('number:', review.attributes.phone_number);
+    });
     return (
       <section className="search-list">
         <ul>
