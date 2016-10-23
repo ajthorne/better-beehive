@@ -6,7 +6,7 @@ nav {
   nav li {
     display: inline-block;
     margin-right: 0.5rem;
-    font-size: 1.3rem; }
+    font-size: 1.5rem; }
   nav a {
     text-decoration: none;
     color: #007B00; }
@@ -14,7 +14,8 @@ nav {
 .hero {
   text-align: center;
   font-family: "Lobster", cursive;
-  color: #007B00; }
+  color: #007B00;
+  padding-bottom: 5rem; }
   .hero h1 {
     font-size: 3rem;
     margin: 0.5rem;
@@ -24,46 +25,55 @@ nav {
       color: #FFB100; }
   .hero .buzz-or-sting figure {
     display: inline-block; }
-  .hero .search-field label {
-    font-size: 1.2rem;
-    margin-right: 0.5rem; }
   .hero .search-field select {
     font-family: "Lobster", cursive;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     padding: 2%;
     color: #007B00;
-    width: 30%;
+    width: 40%;
     border: 0; }
   .hero .search-field button {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     background: white;
     border: 0;
-    border-radius: 5px;
+    border-radius: 8px;
     color: #007B00;
-    font-family: 'Lobster', cursive;
-    font-size: 1.2rem; }
+    margin-left: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-family: 'Lobster', cursive; }
 
 .infographic-section {
   display: flex;
   box-sizing: border-box;
-  position: relative; }
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #1D8C0B; }
   .infographic-section figure {
     flex-basis: 50%;
     margin-right: 0;
+    position: relative;
     text-align: center; }
   .infographic-section #info-arrow {
     position: absolute;
-    bottom: 0;
-    left: 265px; }
+    display: none;
+    bottom: 0; }
   .infographic-section .infographic-why {
     flex-basis: 50%;
     margin-right: 2rem;
-    margin-top: 5rem;
-    text-align: center; }
+    margin-top: 2rem;
+    text-align: center;
+    color: white; }
     .infographic-section .infographic-why h2 {
-      width: 80%; }
+      width: 80%;
+      font-size: 3.5rem;
+      font-family: "Lobster", cursive;
+      margin: 0;
+      font-weight: normal; }
     .infographic-section .infographic-why p {
-      width: 80%; }
+      width: 80%;
+      font-size: 1.5rem;
+      line-height: 30px; }
 
 html {
   height: 100%;
@@ -74,9 +84,7 @@ body {
   height: 100%;
   margin: 0;
   font-family: helvetica;
-  background: #ADCE33; }
-  body .container {
-    min-height: 100%;
-    position: relative; }
+  background: #ADCE33;
+  font-weight: normal; }
 
 /*# sourceMappingURL=main.css.map */
