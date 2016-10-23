@@ -250,6 +250,22 @@ footer {
         border: 0;
         display: block; }
 
+.search-list ul li {
+  list-style-type: none;
+  display: inline-flex; }
+.search-list ul .buzzImg {
+  width: 15%; }
+.search-list ul .rating {
+  flex-basis: 50%; }
+  .search-list ul .rating p {
+    display: inline-block;
+    font-family: "Lobster", cursive;
+    font-size: 3rem;
+    color: RGBA(0, 123, 0, 1); }
+.search-list ul .contact {
+  flex-basis: 50%;
+  font-size: 3rem; }
+
 html {
   height: 100%;
   margin: 0;
