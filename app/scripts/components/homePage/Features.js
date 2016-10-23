@@ -3,6 +3,7 @@ import Hero from './Hero';
 import Infographic from './Infographic';
 import Quote from './Quote';
 import About from './About';
+import Footer from './Footer';
 
 const Features = React.createClass({
   render: function () {
@@ -12,6 +13,7 @@ const Features = React.createClass({
         <Infographic />
         <Quote />
         <About />
+        <Footer/>
       </section>
     )
   }

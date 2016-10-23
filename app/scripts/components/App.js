@@ -1,6 +1,6 @@
 import React from 'react';
 import Nav from './homePage/Nav';
-import Footer from './homePage/Footer';
+// import Footer from './homePage/Footer';
 
 const App = React.createClass({
   render: function () {
@@ -8,7 +8,6 @@ const App = React.createClass({
      <section className="main-content">
         <Nav/>
         {this.props.children}
-        <Footer/>
       </section>
     )
   }
