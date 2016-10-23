@@ -11,6 +11,7 @@ const About = React.createClass({
         </div>
         <figure className="about-pic">
           <img src="../../../assets/images/bbp-founder.jpeg"/>
+          <figcaption>Veronica Martinez, Founder</figcaption>
         </figure>
       </section>
     )

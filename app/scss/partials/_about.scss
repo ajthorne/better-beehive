@@ -4,6 +4,7 @@
   padding-top: 5rem;
   padding-bottom: 5rem;
   min-height: 500px;
+  color: white;
 
   .about-copy {
     flex-basis: 50%;
@@ -12,6 +13,9 @@
       font-size: 3.5rem;
       font-family: $header-font;
       margin-bottom: 0;
+      font-weight: normal;
+      margin-left: 2rem;
+      text-align: left;
     }
 
     p {
@@ -28,6 +32,12 @@
     img {
       width: 70%;
       border-radius: 50%;
+    }
+
+    figcaption {
+      font-family: $header-font;
+      font-size: 2.3rem;
+      color: white;
     }
   }
 }

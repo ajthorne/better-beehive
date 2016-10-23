@@ -23,7 +23,7 @@ const Footer = React.createClass({
           <i className="fa fa-twitter"></i>
           <i className="fa fa-instagram"></i>
         </div>
-        <p>© 2016 Copyright Better Beehive Project</p>
+        <p className="copyright">© 2016 Copyright Better Beehive Project</p>
       </footer>
     )
   }
