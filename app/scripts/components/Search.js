@@ -1,6 +1,7 @@
 import React from 'react';
 import store from '../store';
 import $ from 'jquery';
+import SearchSingle from './SearchSingle.js';
 
 const Search = React.createClass({
   getInitialState: function () {
@@ -36,15 +37,20 @@ const Search = React.createClass({
     console.log(store.reviews);
     let reviews = store.reviews.map((review, i, arr) => {
       console.log('review:', review.attributes);
-      console.log('address:', review.attributes.address);
-      console.log('buzzes:', review.attributes.buzzes);
-      console.log('name:', review.attributes.name);
-      console.log('stings:', review.attributes.stings);
-      console.log('number:', review.attributes.phone_number);
+      let id  = review.attributes.id;
+      let name = review.attributes.name;
+      let number = review.attributes.phone_number;
+      let address = review.attributes.address;
+      let buzzes = review.attributes.buzzes;
+      let stings = review.attributes.stings;
+      // let stings = Math.floor((review.attributes.stings / review.attributes.total) * 100);
+
+      return <SearchSingle key={i} id={id} name={name} number={number} address={address} buzzes={buzzes} stings={stings}/>
     });
     return (
       <section className="search-list">
         <ul>
+          {reviews}
         </ul>
       </section>
     )

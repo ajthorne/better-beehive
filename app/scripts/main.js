@@ -6,6 +6,7 @@ import Features from './components/homePage/Features';
 import Buzz from './components/Buzz';
 import Sting from './components/Sting';
 import Search from './components/Search';
+import Profile from './components/Profile';
 
 
 const router = (
@@ -15,6 +16,7 @@ const router = (
     <Route path="/buzz" component={Buzz}/>
     <Route path="/sting" component={Sting}/>
     <Route path="/search/:type" component={Search}/>
+    <Route path="/reviews/:id" component={Profile}/>
     </Route>
   </Router>
 );
