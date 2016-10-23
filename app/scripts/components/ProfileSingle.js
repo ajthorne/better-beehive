@@ -15,7 +15,7 @@ const ProfileSingle = React.createClass({
           <p>{this.props.stings}</p>
         </div>
         <p className="single-comment-holder">
-        {this.props.comment.feedback_comment}</p>
+          {this.props.comment.feedback_comment}</p>
       </li>
     )
   }
