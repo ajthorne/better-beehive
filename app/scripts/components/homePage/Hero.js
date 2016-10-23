@@ -1,5 +1,5 @@
 import React from 'react';
-import {browserHistory} from 'react-router';
+import {browserHistory, Link} from 'react-router';
 
 const Hero = React.createClass({
   searchHandler: function (e) {
@@ -11,8 +11,8 @@ const Hero = React.createClass({
     return (
       <section className="Hero">
         <h1>Better Beehive Project</h1>
-        <div><a href="/buzz">Image for Buzz</a></div>
-        <div><a href="/sting">Image for Sting</a></div>
+        <figure><Link to="/buzz"><img src="http://placekitten.com/100/100"/></Link></figure>
+        <figure><Link to="/sting"><img src="http://placekitten.com/100/100"/></Link></figure>
         <form onSubmit={this.searchHandler} className="search-field">
           <input className="search-field" type="checkbox" id="medical" value="medical"/><label>Medical</label>
           <input className="search-field" type="checkbox" id="social" value="social"/><label>Social</label>

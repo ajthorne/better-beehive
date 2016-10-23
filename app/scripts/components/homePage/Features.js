@@ -10,8 +10,8 @@ const Features = React.createClass({
       <section className="features-container">
         <Hero />
         <Infographic />
-        <Quote/>
-        <About/>
+        <Quote />
+        <About />
       </section>
     )
   }
