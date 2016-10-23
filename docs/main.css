@@ -17,15 +17,28 @@ nav {
   color: #007B00;
   padding-bottom: 5rem;
   min-height: 500px; }
+  .hero #logo-img {
+    width: 15%; }
   .hero h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin: 0.5rem;
     color: black;
-    font-weight: normal; }
+    font-weight: normal;
+    margin-bottom: 2rem; }
     .hero h1 span {
-      color: #FFB100; }
-  .hero .buzz-or-sting figure {
-    display: inline-block; }
+      color: #FFB100;
+      text-shadow: 1px 1px 1px black; }
+  .hero figure img {
+    width: 25%; }
+  .hero .buzz-or-sting {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center; }
+    .hero .buzz-or-sting figure {
+      flex-basis: 50%; }
+      .hero .buzz-or-sting figure img {
+        width: 250px; }
   .hero .search-field select {
     font-family: "Lobster", cursive;
     font-size: 1.8rem;
