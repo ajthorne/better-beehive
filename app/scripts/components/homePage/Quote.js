@@ -5,11 +5,9 @@ const Quote = React.createClass({
   render: function () {
     return (
       <section className="quote-section">
-        <h4>
-          <span>"</span>
+        <blockquote>
           Revolutionary space to have our voices heard. We recognize entities in our community that value accessibility, empowerment and inclusion (AEI) for all. The possibilities are endless.
-          <span>"</span>
-        </h4>
+        </blockquote>
       </section>
     )
   }

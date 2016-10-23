@@ -2,6 +2,7 @@
 @import './partials/nav';
 @import './partials/hero';
 @import './partials/infographic';
+@import './partials/quote';
 
 html {
   height: 100%;
@@ -15,9 +16,4 @@ body {
   font-family: helvetica;
   background: #ADCE33;
   font-weight: normal;
-
-  // .container {
-  //   min-height: 100%;
-  //   // position: relative;
-  // }
 }
