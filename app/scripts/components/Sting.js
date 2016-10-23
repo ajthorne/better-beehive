@@ -9,11 +9,11 @@ const Sting = React.createClass({
       <section className="buzz-section">
       <div className="logo-section">
         <img src="../../../assets/images/happybee.png"/>
-        <h4>Better Beehive Project</h4>
+        <h4>Better <span>Beehive</span> Project</h4>
       </div>
       <div className="buzz-form">
         <h1 id="sting-header">Leave A Sting</h1>
-        <img src="../../../assets/images/Buzz.png"/>
+        <img src="../../../assets/images/Sting.png"/>
       <form onSubmit={this.submitHandler}>
         <div className="form-section">
           <label>Your Name</label>
