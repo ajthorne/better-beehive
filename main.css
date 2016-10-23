@@ -15,7 +15,8 @@ nav {
   text-align: center;
   font-family: "Lobster", cursive;
   color: #007B00;
-  padding-bottom: 5rem; }
+  padding-bottom: 5rem;
+  min-height: 500px; }
   .hero h1 {
     font-size: 3rem;
     margin: 0.5rem;
@@ -48,7 +49,8 @@ nav {
   box-sizing: border-box;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #1D8C0B; }
+  background-color: #1D8C0B;
+  min-height: 500px; }
   .infographic-section figure {
     flex-basis: 50%;
     margin-right: 0;
@@ -79,7 +81,8 @@ nav {
   background: #69B500;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  text-align: center; }
+  text-align: center;
+  min-height: 500px; }
   .quote-section blockquote:before {
     content: open-quote;
     margin-right: 0.8rem;
@@ -97,6 +100,29 @@ nav {
     font-size: 2rem;
     margin: 0 auto;
     quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+.about-section {
+  display: flex;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  min-height: 500px; }
+  .about-section .about-copy {
+    flex-basis: 50%; }
+    .about-section .about-copy h1 {
+      font-size: 3.5rem;
+      font-family: "Lobster", cursive;
+      margin-bottom: 0; }
+    .about-section .about-copy p {
+      font-size: 1.5rem;
+      line-height: 26px;
+      margin-left: 2rem;
+      text-align: justify; }
+  .about-section .about-pic {
+    flex-basis: 50%; }
+    .about-section .about-pic img {
+      width: 70%;
+      border-radius: 50%; }
 
 html {
   height: 100%;
