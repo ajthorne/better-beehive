@@ -10,7 +10,7 @@ const Infographic = React.createClass({
         </figure>
         <div className="infographic-why">
           <h2>Why Beehive?</h2>
-          <p>At the Better Beehive Project we believe in the power of the Voice. In a beehive each bee has a role to create a strong, collective and more productive beehive.</p>
+          <p>At the Better Beehive Project, we believe in the power of the voice. In a beehive, each bee has a role to create a strong, collective and more productive beehive.</p>
         </div>
       </section>
     )
