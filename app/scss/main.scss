@@ -1,0 +1,21 @@
+@import './partials/variables';
+@import './partials/nav';
+@import './partials/hero';
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: helvetica;
+  background: #ADCE33;
+
+  .container {
+    min-height: 100%;
+    position: relative;
+  }
+}

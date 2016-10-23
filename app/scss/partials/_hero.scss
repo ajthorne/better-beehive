@@ -1,0 +1,32 @@
+.hero {
+  text-align: center;
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .buzz-or-sting {
+    figure {
+      display: inline-block;
+    }
+  }
+
+  .search-field {
+    // width: 50%;
+    label {
+      color: #007B00;
+      margin-right: 0.5rem;
+    }
+
+    input[type="checkbox"] {
+      transform: scale(1.5);
+    }
+
+    button {
+      // width: 50%;
+      font-size: 1.2rem;
+      padding: 1%;
+      // display: block;
+    }
+  }
+}
