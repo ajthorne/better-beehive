@@ -13,8 +13,8 @@ const Hero = React.createClass({
         <figure><img id="logo-img" src="../../../assets/images/happybee.png"/></figure>
         <h1>Better <span>Beehive</span> Project</h1>
         <div className="buzz-or-sting">
-          <figure><Link to="/buzz"><img src="../../../assets/images/buzz.png"/></Link></figure>
-          <figure><Link to="/sting"><img src="../../../assets/images/sting.png"/></Link></figure>
+          <figure><Link to="/buzz"><img src="../../../assets/images/Buzz.png"/></Link></figure>
+          <figure><Link to="/sting"><img src="../../../assets/images/Sting.png"/></Link></figure>
         </div>
         <form onSubmit={this.searchHandler} className="search-field">
          <select id='business-type' ref='type' onChange={this.handleChange}>
