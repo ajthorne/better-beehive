@@ -1,0 +1,33 @@
+.about-section {
+  display: flex;
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  min-height: 500px;
+
+  .about-copy {
+    flex-basis: 50%;
+
+    h1 {
+      font-size: 3.5rem;
+      font-family: $header-font;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 1.5rem;
+      line-height: 26px;
+      margin-left: 2rem;
+      text-align: justify;
+    }
+  }
+
+  .about-pic {
+    flex-basis: 50%;
+
+    img {
+      width: 70%;
+      border-radius: 50%;
+    }
+  }
+}
