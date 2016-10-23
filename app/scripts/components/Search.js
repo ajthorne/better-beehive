@@ -24,7 +24,7 @@ const Search = React.createClass({
     store.reviews.fetch({
       url: `https://serene-river-21105.herokuapp.com/reviews/search?type=${businessType}`,
       success: function (response) {
-        console.log(response);
+        // console.log(response);
       }
     });
   },
@@ -34,16 +34,19 @@ const Search = React.createClass({
   },
 
   render: function () {
-    console.log(store.reviews);
+    // console.log(store.reviews);
     let reviews = store.reviews.map((review, i, arr) => {
-      console.log('review:', review.attributes);
+      // console.log('review:', review.attributes);
       let id  = review.attributes.id;
       let name = review.attributes.name;
       let number = review.attributes.phone_number;
       let address = review.attributes.address;
-      let buzzes = review.attributes.buzzes;
-      let stings = review.attributes.stings;
-      // let stings = Math.floor((review.attributes.stings / review.attributes.total) * 100);
+      // let buzzes = review.attributes.buzzes;
+      // let stings = review.attributes.stings;
+      let totalReviews = (review.attributes.stings + review.attributes.buzzes)
+      let buzzes = Math.floor((review.attributes.buzzes / totalReviews) * 100);
+      let stings = Math.floor((review.attributes.stings / totalReviews) * 100);
+      // console.log(totalReviews);
 
       return <SearchSingle key={i} id={id} name={name} number={number} address={address} buzzes={buzzes} stings={stings}/>
     });

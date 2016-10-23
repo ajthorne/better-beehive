@@ -9,8 +9,8 @@ const SearchSingle = React.createClass({
       <li className="single-review-holder">
         <Link to={`/reviews/${this.props.id}`}><p className="single-review-name"><span>Name: </span>{this.props.name}</p></Link>
         <p className="single-review-number"><span>Number: </span>{this.props.number}</p>
-        <p className="single-review-buzzes"><span>Buzzes: </span>{this.props.buzzes}</p>
-        <p className="single-review-stings"><span>Stings: </span>{this.props.stings}</p>
+        <p className="single-review-buzzes"><span>Buzzes: </span>{this.props.buzzes}<span>%</span></p>
+        <p className="single-review-stings"><span>Stings: </span>{this.props.stings}<span>%</span></p>
       </li>
     )
   }
