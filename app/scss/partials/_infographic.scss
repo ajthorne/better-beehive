@@ -6,6 +6,9 @@
   padding-bottom: 5rem;
   background-color: #1D8C0B;
   min-height: 500px;
+  background: linear-gradient( rgba(146, 218, 0, 0.30), rgba(146, 218, 0, 0.3)), url('../../../assets/images/unnamed.png');
+  background-repeat: repeat;
+  background-size: 20%;
 
   figure {
     flex-basis: 50%;
@@ -14,7 +17,8 @@
     text-align: center;
   }
     #info-img {
-      // position: relative;
+      width: 350px;
+      object-fit: cover;
 
     }
 

@@ -1,5 +1,5 @@
 footer {
-  background: #69B500;
+  background: RGBA(54, 117, 0, 1.00);
   padding-top: 5rem;
   padding-bottom: 5rem;
   text-align: center;
@@ -30,13 +30,14 @@ form {
   margin-top: 2rem;
   margin-bottom: 1rem;
   i {
-    margin-right: 0.8rem;
+    margin-right: 2rem;
     font-size: 3rem;
   }
 }
 
 .copyright {
   font-family: $header-font;
-  font-size: 1.3rem;
+  font-weight: normal;
+  font-size: 1.5rem;
 }
 }

@@ -5,7 +5,7 @@ const Infographic = React.createClass({
     return (
       <section className="infographic-section">
         <figure className="infographic-img">
-          <img id="info-img" src="http://placekitten.com/300/300"/>
+          <img id="info-img" src="../../../assets/images/buzzstinginfo.png"/>
           <img id="info-arrow" src="http://placekitten.com/100/100"/>
         </figure>
         <div className="infographic-why">
