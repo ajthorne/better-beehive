@@ -35,7 +35,11 @@ const Search = React.createClass({
 
   render: function () {
     // console.log(store.reviews);
-    let reviews = store.reviews.map((review, i, arr) => {
+    let reviews;
+    if (!store.reviews.length) {
+      reviews = (<i className="fa fa-spinner fa-pulse fa-3x fa-fw"></i>)
+    } else {
+      reviews = store.reviews.map((review, i, arr) => {
       // console.log('review:', review.attributes);
       let id  = review.attributes.id;
       let name = review.attributes.name;
@@ -50,6 +54,7 @@ const Search = React.createClass({
 
       return <SearchSingle key={i} id={id} name={name} number={number} address={address} buzzes={buzzes} stings={stings}/>
     });
+  }
     return (
       <section className="search-list">
         <ul>
