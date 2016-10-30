@@ -1,16 +1,34 @@
 import React from 'react';
+import $ from 'jquery';
+import store from '../store';
+
 
 const Buzz = React.createClass({
-  submitHandler: function () {
-    console.log('sending to server...');
-    // $.ajax({
-    //     type: 'POST',
-    //     url: `https://serene-river-21105.herokuapp.com/businesses`,
-    //     data: json.stringify()
-    //     success: function (response) {
-    //       console.log(response);
-    //     }
-    //   });
+  submitHandler: function (e) {
+    e.preventDefault();
+    // console.log('sending to server...');
+    let buzzOrSting = this.props.route.path.substring(1);
+    console.log(buzzOrSting);
+    // console.log(document.querySelectororAll('form-checkbox:checked').value);
+    let data = {
+      name: this.refs.name.value,
+      relationship: document.getElementById('relationship-type').value,
+      business_type: document.getElementById('business-type').value,
+      business: this.refs.business.value,
+      zip_code: this.refs.zipcode.value,
+      // feedback_type: document.getElementById('form-checkbox').checked,
+      feedback_comment: this.refs.buzzwhy.value}
+      console.log(data);
+      // store.businesses.create(data);
+    $.ajax({
+        type: 'POST',
+        url: `https://serene-river-21105.herokuapp.com/reviews`,
+        data: JSON.stringify(data),
+        contentType: 'application/json',
+        success: function (response) {
+          console.log(response);
+        }
+      });
     },
   render: function () {
     return (
@@ -25,38 +43,45 @@ const Buzz = React.createClass({
         <form onSubmit={this.submitHandler}>
           <div className="form-section">
             <label>Your Name</label>
-            <input type="text" placeholder="name"/>
+            <input type="text" placeholder="name" ref="name"/>
           </div>
           <div className="form-section">
             <label>Relationship</label>
-            <input type="text" placeholder="Relationship to Individual with Special Needs"/>
+            <select id='relationship-type'>
+                <option>Search</option>
+                <option ref="self" id="0" value='self'>Self</option>
+                <option ref="parent" id="1" value='parent/guardian'>Parent/Guardian</option>
+                <option ref="professional" id="2" value='professional'>Teacher/Professional</option>
+                <option ref="other" id="2" value='other'>Other Friends and Family</option>
+                <option ref="community" id="2" value='community'>Community Member</option>
+             </select>
           </div>
           <div className="form-section">
             <label>Name</label>
-            <input type="text" placeholder="Name of Business"/>
+            <input type="text" placeholder="Name of Business" ref="business"/>
           </div>
           <div className="form-section">
             <label>Zip Code</label>
-            <input type="text" placeholder="Zip code of Business"/>
+            <input type="text" placeholder="Zip code of Business" ref="zipcode"/>
           </div>
           <div className="form-section">
             <label>Type of Business</label>
-            <input type='text' list='business-type'/>
-            <datalist id='business-type'>
-              <option label='medical' value='Medical'/>
-              <option label='social' value='Social'/>
-              <option label='school' value='School'/>
-            </datalist>
+             <select id='business-type'>
+                 <option>Search</option>
+                 <option ref="medical" id="0" value='medical'>Medical</option>
+                 <option ref="social" id="1" value='social'>Social</option>
+                 <option ref="school" id="2" value='school'>School</option>
+              </select>
           </div>
           <div className="form-textarea">
             <label htmlFor="buzz-why">Why Buzzworthy?</label>
-            <textarea id="buzz-why"></textarea>
+            <textarea id="buzz-why" ref="buzzwhy"></textarea>
           </div>
           <div className="form-checkbox">
             <label htmlFor="buzz-aei">Please choose at least one Buzzworthy value</label>
-            <label><input type="checkbox" id="accessibility"/>Accessibility</label>
-            <label><input type="checkbox" id="empowerment"/>Empowerment</label>
-            <label><input type="checkbox" id="inclusion"/>Inclusion</label>
+            <label><input className="form-checkbox" type="checkbox" value="accessibility" name="accessibility"/>Accessibility</label>
+            <label><input className="form-checkbox" type="checkbox" value="empowerment" name="empowerment"/>Empowerment</label>
+            <label><input className="form-checkbox" type="checkbox" value="inclusion" name="inclusion"/>Inclusion</label>
           </div>
           <button onClick={this.submitHandler}>Submit</button>
         </form>
@@ -67,5 +92,3 @@ const Buzz = React.createClass({
 });
 
 export default Buzz;
-
-//for relationship data- self, parent/guardian, other family/friend, teacher/professional, community member
