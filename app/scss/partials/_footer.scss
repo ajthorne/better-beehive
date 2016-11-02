@@ -33,6 +33,15 @@ form {
     margin-right: 2rem;
     font-size: 3rem;
   }
+
+  .link {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      color: RGBA(255, 177, 0, 1.00);
+    }
+  }
 }
 
 .copyright {

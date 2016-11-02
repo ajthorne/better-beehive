@@ -11,6 +11,8 @@ const Sting = React.createClass({
         <img src="../../../assets/images/happybee.png"/>
         <h4>Better <span>Beehive</span> Project</h4>
       </div>
+      <div className="clearfix">
+      </div>
       <div className="buzz-form">
         <h1 id="sting-header">Leave A Sting</h1>
         <img src="../../../assets/images/Sting.png"/>

@@ -42,7 +42,6 @@ nav {
   .hero .search-field select {
     font-family: "Lobster", cursive;
     font-size: 1.8rem;
-    padding: 2%;
     color: #007B00;
     width: 40%;
     border: 0; }
@@ -177,6 +176,11 @@ footer {
     footer .social-media-holder i {
       margin-right: 2rem;
       font-size: 3rem; }
+    footer .social-media-holder .link {
+      text-decoration: none;
+      color: white; }
+      footer .social-media-holder .link:hover {
+        color: RGBA(255, 177, 0, 1); }
   footer .copyright {
     font-family: "Lobster", cursive;
     font-weight: normal;
@@ -185,20 +189,6 @@ footer {
 .buzz-section {
   font-family: "Lobster", cursive;
   margin-bottom: 5rem; }
-  .buzz-section .logo-section {
-    position: absolute;
-    top: 2px;
-    margin-left: 2rem;
-    text-align: center;
-    width: 20%; }
-    .buzz-section .logo-section img {
-      width: 40%; }
-    .buzz-section .logo-section h4 {
-      margin: 0;
-      font-size: 1.5rem; }
-      .buzz-section .logo-section h4 span {
-        color: RGBA(255, 177, 0, 1);
-        text-shadow: 1px 1px 1px black; }
   .buzz-section .buzz-form {
     width: 50%;
     margin: 0 auto;
@@ -279,5 +269,23 @@ body {
   font-family: helvetica;
   background: RGBA(173, 233, 69, 1);
   font-weight: normal; }
+  body .logo-section {
+    position: absolute;
+    font-family: "Lobster", cursive;
+    top: 2px;
+    margin-left: 2rem;
+    text-align: center;
+    width: 25%; }
+    body .logo-section img {
+      width: 40%; }
+    body .logo-section h4 {
+      margin: 0;
+      font-size: 1.5rem; }
+      body .logo-section h4 span {
+        color: RGBA(255, 177, 0, 1);
+        text-shadow: 1px 1px 1px black; }
+  body .clearfix {
+    clear: both;
+    height: 50px; }
 
 /*# sourceMappingURL=main.css.map */

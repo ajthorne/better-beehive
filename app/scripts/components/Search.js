@@ -57,6 +57,10 @@ const Search = React.createClass({
   }
     return (
       <section className="search-list">
+      <div className="logo-section">
+        <img src="../../../assets/images/happybee.png"/>
+        <h4>Better <span>Beehive</span> Project</h4>
+      </div>
         <ul>
           {reviews}
         </ul>

@@ -1,110 +1,71 @@
 .buzz-section {
-  font-family: $header-font;
-  margin-bottom: 5rem;
-
-  .logo-section {
-    // float: left;
-    position: absolute;
-    top:2px;
-    margin-left: 2rem;
-    text-align: center;
-    width: 20%;
-
-    img {
-      width: 40%;
+    font-family: $header-font;
+    margin-bottom: 5rem;
+    .buzz-form {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        #sting-header {
+            color: #884D00;
+            margin-right: 5rem;
+        }
+        #buzz-header {
+            color: #007B00;
+            margin-right: 5rem;
+        }
+        h1 {
+            display: inline-block;
+            vertical-align: top;
+            // font-family: $header-font;
+            font-size: 2.5rem;
+            color: white;
+            font-weight: normal;
+        }
+        img {
+            width: 30%;
+        }
+        label {
+            color: black;
+            font-size: 1.3rem;
+            display: block;
+        }
+        form {
+            text-align: left;
+            .form-section {
+                display: inline-block;
+                width: 42%;
+                box-sizing: border-box;
+            }
+            .form-checkbox {
+                width: 100%;
+            }
+            .form-section:nth-of-type(2n) {
+                margin-left: 2rem;
+            }
+            input {
+                margin-bottom: 1rem;
+                width: 100%;
+                padding: 3%;
+            }
+            input[type="checkbox"] {
+                padding: 0;
+                transform: scale(1.2);
+                width: 5%;
+            }
+            textarea {
+                padding: 5%;
+                width: 80%;
+                margin-bottom: 1rem;
+            }
+            button {
+                font-family: $header-font;
+                font-size: 1.2rem;
+                color: #007B00;
+                background: white;
+                border-radius: 8px;
+                border: 0;
+                display: block;
+            }
+        }
     }
-
-    h4 {
-      margin: 0;
-      font-size: 1.5rem;
-
-      span {
-        color: RGBA(255, 177, 0, 1.00);
-        text-shadow: 1px 1px 1px black;
-      }
-    }
-  }
-
-  .buzz-form {
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-
-    #sting-header {
-      color: #884D00;
-      margin-right: 5rem;
-    }
-
-    #buzz-header {
-      color: #007B00;
-      margin-right: 5rem;
-    }
-
-    h1 {
-      display: inline-block;
-      vertical-align: top;
-      // font-family: $header-font;
-      font-size: 2.5rem;
-      color: white;
-      font-weight: normal;
-    }
-
-    img {
-      width: 30%;
-      // margin-left: 8rem;
-    }
-
-    label {
-      color: black;
-      font-size: 1.3rem;
-      display: block;
-    }
-
-    form {
-      text-align: left;
-
-
-      .form-section {
-        display: inline-block;
-        width: 42%;
-        box-sizing: border-box;
-      }
-
-      .form-checkbox {
-        width: 100%;
-      }
-
-      .form-section:nth-of-type(2n) {
-        margin-left: 2rem;
-      }
-
-      input {
-        margin-bottom: 1rem;
-        width: 100%;
-        padding: 3%;
-      }
-
-      input[type="checkbox"] {
-        padding: 0;
-        transform: scale(1.2);
-        width: 5%;
-      }
-
-      textarea {
-        padding: 5%;
-        width: 80%;
-        margin-bottom: 1rem;
-      }
-
-      button {
-        font-family: $header-font;
-        font-size: 1.2rem;
-        color: #007B00;
-        background: white;
-        border-radius: 8px;
-        border: 0;
-        display: block;
-      }
-  }
-}
 }

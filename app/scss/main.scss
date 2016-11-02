@@ -20,4 +20,32 @@ body {
   font-family: helvetica;
   background: RGBA(173, 233, 69, 1.00);
   font-weight: normal;
+
+  .logo-section {
+    position: absolute;
+    font-family: $header-font;
+    top:2px;
+    margin-left: 2rem;
+    text-align: center;
+    width: 25%;
+
+    img {
+      width: 40%;
+    }
+
+    h4 {
+      margin: 0;
+      font-size: 1.5rem;
+
+      span {
+        color: RGBA(255, 177, 0, 1.00);
+        text-shadow: 1px 1px 1px black;
+      }
+    }
+  }
+
+  .clearfix {
+    clear: both;
+    height: 50px;
+  }
 }

@@ -38,7 +38,7 @@ const Profile = React.createClass({
       let buzzes = business.attributes.business.buzzes;
       let stings = business.attributes.business.stings;
       let comment = business.attributes.reviews[0];
-      //change for future...only renders first review 
+      //change for future...only renders first review
       // let businessRating = business.attributes.reviews.map((item) => {
       //   let comment = item.feedback_comment;
       // })
@@ -46,7 +46,15 @@ const Profile = React.createClass({
     });
     return (
       <section className="profile-container">
+      <div className="logo-section">
+        <img src="../../../assets/images/happybee.png"/>
+        <h4>Better <span>Beehive</span> Project</h4>
+      </div>
+      <div className="clearfix">
+      </div>
+      <div className="business-container">
         {business}
+      </div>
       </section>
     )
   }

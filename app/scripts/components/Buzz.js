@@ -8,7 +8,7 @@ const Buzz = React.createClass({
     e.preventDefault();
     // console.log('sending to server...');
     let buzzOrSting = this.props.route.path.substring(1);
-    console.log(buzzOrSting);
+    // console.log(buzzOrSting);
     // console.log(document.querySelectororAll('form-checkbox:checked').value);
     let data = {
       name: this.refs.name.value,
@@ -17,12 +17,13 @@ const Buzz = React.createClass({
       business: this.refs.business.value,
       zip_code: this.refs.zipcode.value,
       // feedback_type: document.getElementById('form-checkbox').checked,
-      feedback_comment: this.refs.buzzwhy.value}
+      // feedback_comment: this.refs.buzzwhy.value
+    }
       console.log(data);
       // store.businesses.create(data);
     $.ajax({
         type: 'POST',
-        url: `https://serene-river-21105.herokuapp.com/reviews`,
+        url: `https://serene-river-21105.herokuapp.com/businesses`,
         data: JSON.stringify(data),
         contentType: 'application/json',
         success: function (response) {
@@ -36,6 +37,8 @@ const Buzz = React.createClass({
         <div className="logo-section">
           <img src="../../../assets/images/happybee.png"/>
           <h4>Better <span>Beehive</span> Project</h4>
+        </div>
+        <div className="clearfix">
         </div>
         <div className="buzz-form">
           <h1 id="buzz-header">Leave A Buzz</h1>
