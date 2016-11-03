@@ -10,26 +10,34 @@ const Buzz = React.createClass({
     let buzzOrSting = this.props.route.path.substring(1);
     // console.log(buzzOrSting);
     // console.log(document.querySelectororAll('form-checkbox:checked').value);
+    console.log(document.getElementById('form-checkbox').checked);
     let data = {
-      name: this.refs.name.value,
-      relationship: document.getElementById('relationship-type').value,
-      business_type: document.getElementById('business-type').value,
-      business: this.refs.business.value,
-      zip_code: this.refs.zipcode.value,
-      // feedback_type: document.getElementById('form-checkbox').checked,
-      // feedback_comment: this.refs.buzzwhy.value
+      business: {
+        name: this.refs.business.value,
+        business_type: document.getElementById('business-type').value,
+        // business: this.refs.business.value,
+        zip_code: this.refs.zipcode.value,
+      },
+      review: {
+        // feedback_type: document.getElementById('form-checkbox').checked,
+        // relationship_type: document.getElementById('relationship-type').value,
+        // feedback_comment: this.refs.buzzwhy.value
+      }
+      // businesses, permitted fields: :name, :business_type, :stings, :buzzes, :phone_number, :zip_code
+      // reviews: :business_id, :feedback_type, :relationship_type, :feedback_comment
     }
       console.log(data);
       // store.businesses.create(data);
-    $.ajax({
-        type: 'POST',
-        url: `https://serene-river-21105.herokuapp.com/businesses`,
-        data: JSON.stringify(data),
-        contentType: 'application/json',
-        success: function (response) {
-          console.log(response);
-        }
-      });
+    // $.ajax({
+    //     type: 'POST',
+    //     url: `https://serene-river-21105.herokuapp.com/businesses`,
+    //     beforeSend: function(xhr) {xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'))},
+    //     data: JSON.stringify(data),
+    //     contentType: 'application/json',
+    //     success: function (response) {
+    //       console.log(response);
+    //     }
+    //   });
     },
   render: function () {
     return (
@@ -48,17 +56,7 @@ const Buzz = React.createClass({
             <label>Your Name</label>
             <input type="text" placeholder="name" ref="name"/>
           </div>
-          <div className="form-section">
-            <label>Relationship</label>
-            <select id='relationship-type'>
-                <option>Search</option>
-                <option ref="self" id="0" value='self'>Self</option>
-                <option ref="parent" id="1" value='parent/guardian'>Parent/Guardian</option>
-                <option ref="professional" id="2" value='professional'>Teacher/Professional</option>
-                <option ref="other" id="2" value='other'>Other Friends and Family</option>
-                <option ref="community" id="2" value='community'>Community Member</option>
-             </select>
-          </div>
+
           <div className="form-section">
             <label>Name</label>
             <input type="text" placeholder="Name of Business" ref="business"/>
@@ -95,3 +93,15 @@ const Buzz = React.createClass({
 });
 
 export default Buzz;
+//
+// <div className="form-section">
+//   <label>Relationship</label>
+//   <select id='relationship-type'>
+//       <option>Search</option>
+//       <option ref="self" id="0" value='self'>Self</option>
+//       <option ref="parent" id="1" value='parent/guardian'>Parent/Guardian</option>
+//       <option ref="professional" id="2" value='professional'>Teacher/Professional</option>
+//       <option ref="other" id="2" value='other'>Other Friends and Family</option>
+//       <option ref="community" id="2" value='community'>Community Member</option>
+//    </select>
+// </div>
