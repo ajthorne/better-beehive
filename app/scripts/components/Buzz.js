@@ -21,23 +21,23 @@ const Buzz = React.createClass({
       review: {
         // feedback_type: document.getElementById('form-checkbox').checked,
         // relationship_type: document.getElementById('relationship-type').value,
-        // feedback_comment: this.refs.buzzwhy.value
+        feedback_comment: this.refs.buzzwhy.value
       }
       // businesses, permitted fields: :name, :business_type, :stings, :buzzes, :phone_number, :zip_code
       // reviews: :business_id, :feedback_type, :relationship_type, :feedback_comment
     }
       console.log(data);
       // store.businesses.create(data);
-    // $.ajax({
-    //     type: 'POST',
-    //     url: `https://serene-river-21105.herokuapp.com/businesses`,
-    //     beforeSend: function(xhr) {xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'))},
-    //     data: JSON.stringify(data),
-    //     contentType: 'application/json',
-    //     success: function (response) {
-    //       console.log(response);
-    //     }
-    //   });
+    $.ajax({
+        type: 'POST',
+        url: `https://serene-river-21105.herokuapp.com/businesses`,
+        beforeSend: function(xhr) {xhr.setRequestHeader('X-CSRF-Token', $('meta[name="csrf-token"]').attr('content'))},
+        data: JSON.stringify(data),
+        contentType: 'application/json',
+        success: function (response) {
+          console.log(response);
+        }
+      });
     },
   render: function () {
     return (
