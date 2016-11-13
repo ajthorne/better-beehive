@@ -18,7 +18,7 @@ const Footer = React.createClass({
           <p>info@betterbeehive.com</p>
         </div>
         <div className="social-media-holder">
-          <i className="fa fa-facebook"></i>
+          <a className="link" href="https://www.facebook.com/betterbeehiveproject"><i className="fa fa-facebook"></i></a>
           <i className="fa fa-linkedin"></i>
           <a className="link" href="http://www.twitter.com/betterbeehive"><i className="fa fa-twitter"></i></a>
           <i className="fa fa-instagram"></i>

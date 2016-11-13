@@ -24,7 +24,7 @@ const Search = React.createClass({
     store.reviews.fetch({
       url: `https://serene-river-21105.herokuapp.com/reviews/search?type=${businessType}`,
       success: function (response) {
-        // console.log(response);
+        console.log(response);
       }
     });
   },
@@ -35,6 +35,7 @@ const Search = React.createClass({
 
   render: function () {
     // console.log(store.reviews);
+    console.log(this.props.params.type.substring(5));
     let reviews;
     if (!store.reviews.length) {
       reviews = (<i className="fa fa-spinner fa-pulse fa-3x fa-fw"></i>)
