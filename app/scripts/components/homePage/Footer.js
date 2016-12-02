@@ -15,7 +15,7 @@ const Footer = React.createClass({
         </form>
         <div className="contact-holder">
           <h1>Contact Us</h1>
-          <p>info@betterbeehive.com</p>
+          <p>veronica.martinez@betterbeehiveproject.com</p>
         </div>
         <div className="social-media-holder">
           <a className="link" href="https://www.facebook.com/betterbeehiveproject"><i className="fa fa-facebook"></i></a>
