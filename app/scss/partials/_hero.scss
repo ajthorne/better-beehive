@@ -8,7 +8,7 @@
   // background: linear-gradient( rgba(173, 233, 69, 0.30), rgba(173, 233, 69, 0.30)), url('../../../assets/images/grassbackground.png');
 
   #logo-img {
-    width: 15%;
+    width: 50%;
   }
 
   h1 {
@@ -28,7 +28,7 @@
     // display: inline-block;
 
     img {
-      width: 25%;
+      // width: 50%;
     }
   }
 
@@ -43,7 +43,7 @@
       flex-basis: 50%;
 
       img {
-        width: 250px;
+        width: 70%;
       }
     }
   }
@@ -56,14 +56,15 @@
 
     select {
       font-family: $header-font;
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       color: #007B00;
       width: 40%;
       border: 0;
+      background: RGBA(173, 233, 69, 1.00);
     }
 
     button {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       background: white;
       border: 0;
       border-radius: 8px;
@@ -72,6 +73,7 @@
       padding-left: 0.5rem;
       padding-right: 0.5rem;
       font-family: 'Lobster', cursive;
+      background: RGBA(173, 233, 69, 1.00);
       // padding: 0.5rem;
     }
   }

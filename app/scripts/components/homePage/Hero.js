@@ -10,13 +10,13 @@ const Hero = React.createClass({
   render: function () {
     return (
       <section className="hero">
-        <figure><img id="logo-img" src="../../../assets/images/happybee.png"/></figure>
-        <h1>Better <span>Beehive</span> Project</h1>
+        <figure><img id="logo-img" src="../../../assets/images/bbp-finals-02.png"/></figure>
         <div className="buzz-or-sting">
-          <figure><Link to="/buzz"><img src="../../../assets/images/Buzz.png"/></Link></figure>
-          <figure><Link to="/sting"><img src="../../../assets/images/Sting.png"/></Link></figure>
+          <figure><Link to="/buzz"><img src="../../../assets/images/bbp-03.png"/></Link></figure>
+          <figure><Link to="/sting"><img src="../../../assets/images/bbp-04.png"/></Link></figure>
         </div>
         <form onSubmit={this.searchHandler} className="search-field">
+         <input name="search" type="Search"/>
          <select id='business-type' ref='type' onChange={this.handleChange}>
              <option>Search</option>
              <option ref="medical" id="0" value='medical'>Medical</option>
@@ -31,6 +31,9 @@ const Hero = React.createClass({
 });
 
 export default Hero;
+
+// <h1>Better <span>Beehive</span> Project</h1>
+
 
 // <input className="search-field" type="checkbox" id="medical" value="medical"/><label>Medical</label>
 // <input className="search-field" type="checkbox" id="social" value="social"/><label>Social</label>
