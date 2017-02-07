@@ -25,6 +25,7 @@ const Search = React.createClass({
       url: `https://serene-river-21105.herokuapp.com/reviews/search?type=${businessType}`,
       success: function (response) {
         console.log(response);
+        console.log('im working...');
       }
     });
   },
@@ -34,14 +35,15 @@ const Search = React.createClass({
   },
 
   render: function () {
-    // console.log(store.reviews);
+    console.log('first render:', store.reviews);
     console.log(this.props.params.type.substring(5));
     let reviews;
     if (!store.reviews.length) {
+      console.log('nothing here....');
       reviews = (<i className="fa fa-spinner fa-pulse fa-3x fa-fw"></i>)
     } else {
       reviews = store.reviews.map((review, i, arr) => {
-      // console.log('review:', review.attributes);
+      console.log('review:', review.attributes);
       let id  = review.attributes.id;
       let name = review.attributes.name;
       let number = review.attributes.phone_number;
